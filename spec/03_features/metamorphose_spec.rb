@@ -17,7 +17,7 @@ describe "Metamorphose" do
 
     # deletes the tadpole from the database
     expect(Tadpole.find_by(:name => @tadpole.name)).to be_nil
-
+   
     # makes a frog with the same name and color of the tadpole
     frog = Frog.find_by(:name => @tadpole.name)
     expect(frog.color).to eq(@tadpole.color)
